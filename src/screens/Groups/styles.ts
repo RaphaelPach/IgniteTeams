@@ -2,12 +2,5 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
   flex: 1;
-  background-color: gray;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const TextColor = styled.Text`
-  color: #fff;
-  font-size: 20px;
+  background-color: #121214;
 `;

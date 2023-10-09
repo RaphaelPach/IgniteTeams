@@ -1,9 +1,10 @@
-import { Container, TextColor } from "./styles";
+import { Header } from "@components/Header";
+import { Container } from "./styles";
 
 export function Groups() {
   return (
     <Container>
-      <TextColor>Groups + Boninho + Marte + Paris</TextColor>
+      <Header />
     </Container>
   );
 }

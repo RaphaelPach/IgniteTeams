@@ -6,6 +6,7 @@ import {
   Roboto_400Regular,
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
+import { StatusBar } from "react-native";
 import Theme from "./src/Theme";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={{ Theme }}>
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
       {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   );

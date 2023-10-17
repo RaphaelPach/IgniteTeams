@@ -5,6 +5,7 @@ import { Container } from "./styles";
 import { Highlight } from "@components/Highlight";
 import { GroupCard } from "@components/GroupCard";
 import { ListEmpty } from "@components/ListEmpty";
+import { Button } from "@components/Button";
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>(["Galera da Ursal"]);
@@ -23,6 +24,8 @@ export function Groups() {
           <ListEmpty text="Nenhuma Turma ainda, oniChan" />
         )} // Componente que renderiza quando a lista está vazia
       />
+
+      <Button title="Criar Turma" type="SECONDARY" />
     </Container>
   );
 }
